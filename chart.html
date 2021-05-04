@@ -1,0 +1,242 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<meta charset ="UTF-8" >
+		<title> Obésité </title>	
+		<link href="https://fonts.googleapis.com/css?family=Cambay&display=swap" rel="stylesheet">
+		<link rel = "stylesheet" href = "bootstrap/css/bootstrap.min.css">
+		<!-- <link rel = "stylesheet" href = "css/style.css"> -->
+		<link rel = "stylesheet" href = "css/style.css">
+		<link rel = "stylesheet" href = "css/animate.css"><!--Liens vers le css d'accueil-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="parallax.min.js"></script>
+		<script src="https://kit.fontawesome.com/cfa21a103c.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" /><!--Lien pour que l'animation fonctionne-->
+		
+	</head>
+	
+	
+
+	<body>
+		<header>
+			<div class="background-image-container num3">
+				<div class="background-image-overlay"></div>
+					<div class="background-image-text-overlay animated fadeIn">
+						<h1>Les niveaux de prévalence de l'obésité <br>
+						<a href="index.html"><button type="button" class="btn btn-outline-dark">Data</button></a>
+						</h1>
+					</div>
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					
+					 <button class="navbar-toggler custom-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon "></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">Partie 1 <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="chart.html">Partie 2</a>
+							</li>
+						  
+						</ul>
+						
+					</div>
+					<div class = "navbar-title"> 
+						<a  href="index.html"> Health</a>
+					</div>
+				  
+				</nav>
+				
+			</div>
+		</header>
+		
+		<div class="content-def content">
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<h1 class="display-6">Quels sont les risques liés à l'obésité ?</h1>
+					<p class="lead">Comme l'hypertension, le diabète, l'excès de cholestérol, l'obésité expose aux problèmes cardio-vasculaires. L'obésité abdominale et la sédentarité sont des facteurs aggravants.<br>-obesite.com</p>
+				</div>
+			</div>
+			<div class="jumbotron jumbotron-fluid">
+				<div class="row">
+				<div class="col-md box1bis">
+					<img src="images/deuxpersblanc.png"  height="200" >
+					<p style="color : white" >Niveau de prévalence moyen de l'obésité</p>
+					<canvas id="myChartmoy" width="400" height="400"></canvas>
+				</div>
+				<div class="col-md box2bis">
+					<img src="images/deuxpersblanc.png"  height="200">
+					<p style="color : white" >Niveau de prévalence maximum de l'obésité</p>
+					<canvas id="myChartmax" width="400" height="400"></canvas>
+				</div>
+				
+					
+			</div>
+			</div>
+		
+		</div>
+		
+		<div class="background-image">
+			<img src="images/sugar1.jpg"  >
+		</div>
+		
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<h1 class="display-6">Quels sont les facteurs qui favorisent l'obésité ?</h1>
+					<p class="lead">Cela s'explique par le manque d'activités physiques au quotidien et une sédentarité excessive (ordinateur, télévision…). En effet, les causes de l'obésité peuvent également être manger gras, salé, sucré, en grande quantité et sans respecter les heures de repas, peut entraîner une prise de poids. <br> - followsurg.com</p>
+				</div>
+			</div>
+			<div class="jumbotron jumbotron-fluid hommefemme ">
+				<div class="row">
+				<div class="col-md box1bis">
+					<img src="images/hommeblanc.png"  height="200">
+					<p style="color : white" >Niveau de prévalence chez l'homme</p>
+					<button type="button" class="btn  btn-outline-dark" data-container="body" data-toggle="popover" data-placement="bottom" data-content="22,07% d'hommes en moyenne sont atteintes d'obésité">
+						Plus
+					</button>
+				</div>
+				<div class="col-md box2bis">
+					<img src="images/femmeblanc.png"  height="200">
+					<p style="color : white" >Niveau de prévalence chez la femme</p>
+					<button type="button" class="btn  btn-outline-dark" data-container="body" data-toggle="popover" data-placement="bottom" data-content="22,09% de femmes en moyenne sont atteintes d'obésité">
+						Plus
+					</button>
+				</div>
+				
+					
+				</div>
+			</div>
+			
+		
+		
+		<footer>
+			<div class="footer-content">
+				<div class = "footer footer-left">
+					<h4>IUT de Paris</h4>
+					<div>
+						<p><strong>Site Mirabeau<br>
+							</strong>143 avenue de Versailles<br>
+							75016 PARIS<br>
+							Tél. : +33 1 76 53 47 00<br>
+							Fax : +33 1 45 25 70 75</p>
+					</div>
+				</div>
+
+				<div class = "footer footer-middle">
+					<h4>Qui sommes-nous?</h4>
+					<ul class = "people">
+							<li>Pacôme BAUDET,</li>
+							<li>Quentin FRANCOIS,</li>
+							<li>Chenlong HUANG,</li>
+							<li>Chelsey MILLO,</li>
+							<li>William ZHANG</li>
+					</ul>
+				</div>
+
+				<div class = " footer footer-right">
+					<a href="index.html"><img src="images/UniversityLogoWhite.png" width="300" height="100"></a>
+				</div>
+			</div>
+		</footer>
+		
+		
+		
+		
+	
+	
+		
+	</body>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="tether.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+	
+	<script>
+    	$( function( )
+    	{
+    		$( "[data-toggle='popover'" ).popover( );
+    	} );
+
+    	$( ".popover-dismiss" ).popover(
+    	{
+    		trigger: "focus"
+    	} );
+    </script>
+	
+	
+<script>
+var ctx = document.getElementById('myChartmoy');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['2010', '2014', '2016'],
+        datasets: [{
+            label: '# obésité',
+            data: [20.8, 22.4, 23.2,],
+            backgroundColor: [
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 206, 86, 0.2)'
+            ],
+            borderColor: [
+                'white',
+                'white',
+                'white'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+<script>
+var ctx = document.getElementById('myChartmax');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['2010', '2014', '2016'],
+        datasets: [{
+            label: '# obésité',
+            data: [28.2, 30.8, 32.1,],
+            backgroundColor: [
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 206, 86, 0.2)'
+            ],
+            borderColor: [
+                'white',
+                'white',
+                'white'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+
+
+</html>
+	

@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box; 
+}
+body
+{
+	font-family: 'MS Sans Serif', Geneva, sans-serif;
+}
+
+/*---------------------------------------- Background----------------------------------------*/
+ .background-image-text-overlay h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    color: white;
+    font-size: 55px;
+    /* text-align: center; */
+	/* font-size: 3vw; */
+	/* text-transform: uppercase ;  */
+	font-weight : bold ; 
+	letter-spacing : 5px ; 
+	/* color : #FFDA8C ;  */
+	color : white ; 
+	/* text-align : center ;  */
+	margin: 0 auto; 
+}
+
+
+@media screen and ( min-width: 00px ) { /* desktop */
+    .content {
+        margin: 100vh 0 0 0;
+		width: 100%;
+    }
+}
+.num1{
+	background :url(../images/sugar2.jpg) repeat fixed 70%; 
+	background-size : cover; 
+}
+.num3{
+	background :url(../images/honey.jpg) repeat fixed 70%; 
+	background-size : cover; 
+}
+.background-image img {
+	width : 100% ;
+    height:750px ;
+}
+
+
+.background-image-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+
+
+.background-image-element { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX( -50% ) translateY( -50% );
+    -moz-transform: translateX( -50% ) translateY( -50% );
+    -webkit-transform: translateX( -50% ) translateY( -50% );
+    transform: translateX( -50% )  translateY( -50% );
+}
+
+@media screen and ( min-width: 100px ) { /* desktop */
+    .background-image-overlay {
+    height: 100%;
+	width: 100%;
+	position: absolute;
+    }
+}
+/*---------------------------------------- NAV BAR ----------------------------------------*/
+
+.navbar{
+	background: rgba(0,0,0,0)!important ; 
+	padding: 25px ; 
+	/* width : 100% ; */
+	/* margin : 0 auto ;  */
+	/* padding	: 20px ;  */
+	/* position : absolute ;  */
+	/* margin-top : 50px ;  */
+	/* margin-left : 13% ;  */
+	/* justify-content :center ;  */
+	z-index : 1; 
+	/* border : 5px solid red;  */
+}
+.navbar .navbar-title{
+	margin : 0 auto!important ; 
+	/* color : red!important;  */
+	/* border : 5px solid blue;  */
+	width : 80% ; 
+	text-align :center ;
+
+}
+.navbar-title a{
+	color : white!important ;	
+	font-weight: bold;
+	font-size: 30px;
+	letter-spacing: 3px;
+	text-decoration : none ; 
+}
+
+
+.nav-link:hover{
+	font-weight: bold;
+	/* text-align :center ;  */
+}
+
+.navbar-nav{
+	/* margin: 0 auto!important;  */
+	/* margin: 0 0 0.2em 0!important;  */
+	color : red!important; 
+	
+}
+
+.nav-link,.navbar-title{
+	color : white!important ;		
+	font-size: 1.6vw;
+	padding : 20px ; 
+	text-align : center ; 
+	letter-spacing: 2px;
+	
+}
+.content{
+	/* padding-bottom : 50px ;  */
+	padding-left:50px ; 
+	padding-right:50px ; 
+}
+/*---------------------------------------- DEF  ----------------------------------------*/
+
+.jumbotron{
+	background-color : white ; 
+	color : black; 
+	text-align : center ; 
+	
+}
+.container h1 {
+	font-size : 40px ;
+}
+.container .lead{
+	color : #737373; 
+	font-size : 15px ;
+	
+}
+/*---------------------------------------- NIV1  ----------------------------------------*/
+
+.col-md{
+	padding:30px ; 
+	margin:10px ; 
+}
+.box1{
+	background-color: #A7D3AB;
+}
+.box1bis,.box2bis{
+	background-color: #222224;
+}
+.box2{
+	background-color: rgb(146, 204, 235);
+}
+.box3{
+	background-color: rgb(234, 212, 109);
+}
+
+/*---------------------------------------- NIV2  ----------------------------------------*/
+.hommefemme{
+	padding-left:50px ; 
+	padding-right:50px ; 
+	
+}
+
+
+/*---------------------------------------- FOOTER  ----------------------------------------*/
+
+footer{
+	background-color:#2EA4C7; 
+	 color : white ;
+	padding : 60px ;
+}
+
+.footer-content{
+	display : flex ;
+	flex-flow: row wrap;
+	justify-content: space-between;
+  	justify-content : space-around;
+	/* padding : 20px  ; */
+}
+
+.footer{
+	 padding-left : 50px  ;
+}
+
+.footer-middle ul li a,
+.diplomes-content ul li a{
+	color : white ;
+	text-decoration: none;
+}
